@@ -21,4 +21,4 @@ ENV CONTAINER_TIMEZONE America/Buenos_Aires
 RUN /usr/sbin/service elasticsearch start
 
 # Install plugins, ssl is required but we are not planning to use it.
-RUN /bin/plugin -install mobz/elasticsearch-head
+RUN bin/plugin -install mobz/elasticsearch-head
